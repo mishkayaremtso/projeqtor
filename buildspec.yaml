@@ -3,5 +3,4 @@ version: 0.2
 phases:
   post_build:
     commands:
-      - mv ./projeqtor /var/www/html/
       - echo "max_input_vars=4000" >> /usr/local/etc/php/php.ini
