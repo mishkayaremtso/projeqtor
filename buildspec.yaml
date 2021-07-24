@@ -1,6 +1,5 @@
 version: 0.2
 
-phases:
-  post_build:
-    commands:
-      - echo "max_input_vars=4000" >> /usr/local/etc/php/php.ini
+artifacts:
+  files:
+    - targert/projeqtor/*
