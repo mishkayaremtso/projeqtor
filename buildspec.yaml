@@ -1,5 +1,11 @@
 version: 0.2
 
+
+phases:
+  build:
+    commands:
+      - zip projeqtor.zip .
+
 artifacts:
   files:
-    - projeqtor/*
+    - '**/*'
