@@ -47,7 +47,7 @@ Configuration :
 
 Security advise :
    - Setup attachments directory and documents directory out of web access (outside document_root of web server)
-	 This will prevent hachers from uploading php file and executing it on your server...
+	 This will prevent hachers from uploading php file and executing it on your server ...
   
 Deploy new version ;
   - Unzip projeqtorVx.y.z.zip to the web server directory
