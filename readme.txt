@@ -5,7 +5,7 @@
 Pre-requisites :
   - http server
   - PHP 5.6 or over
-    PHP 7.x or 8.0 is advised when available (the latest the better)  : it brings great performance improvments
+    PHP 7.x or 8.0 is advised when available (the latest the better) : it brings great performance improvments
   - MySQL database (5 or over) or PostgreSql database (V9.1 or over)
   
   For instance, you may try to set-up an EasyPHP server, including all required elements.
