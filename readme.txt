@@ -11,7 +11,7 @@ Pre-requisites :
   For instance, you may try to set-up an EasyPHP server, including all required elements.
   This set-up is not recommanded for production purpose, but only for testing and evaluation purpose.
   You may also set-up a Zend Server, including all required elements.
-  This set-up can be used for production purpose...
+  This set-up can be used for production purpose.
 
   PHP configuration advised :
     max_input_vars = 4000 ; must be > 2000 for real work allocation screen
