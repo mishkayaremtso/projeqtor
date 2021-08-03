@@ -7,7 +7,7 @@ phases:
       - apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
       - add-apt-repository ppa:mozillateam/firefox-next
       - apt-get update
-      - apt-get install firefox xvfb
+      - apt-get install firefox xvfb -y
       - Xvfb :10 -ac &
       - export DISPLAY=:10
       - pip install --upgrade pip
