@@ -3,6 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - rm /etc/apt/sources.list.d/sbt.list
       - add-apt-repository ppa:mozillateam/firefox-next
       - apt-get update
       - apt-get install firefox xvfb
