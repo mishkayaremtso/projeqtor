@@ -3,7 +3,7 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - sudo add-apt-repository ppa:mozillateam/firefox-next
+      - add-apt-repository ppa:mozillateam/firefox-next
       - apt-get update
       - apt-get install firefox xvfb
       - Xvfb :10 -ac &
