@@ -4,8 +4,7 @@ phases:
   pre_build:
     commands:
       - pip install --upgrade pip
-      - pip install selenium
-      - pip install webdriver_manager
+      - pip install selenium==2.53.6
   build: 
     commands:
       - python3 conf/projeqtor_post.py
