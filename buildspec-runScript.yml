@@ -10,6 +10,6 @@ phases:
       - pip install webdriver_manager
   build: 
     commands:
-      - python3 conf/projeqtor_post.py
+      - python conf/projeqtor_post.py
       
     
