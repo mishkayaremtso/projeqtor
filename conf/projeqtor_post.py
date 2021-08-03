@@ -1,9 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from webdriver_manager.firefox import GeckoDriverManager
 
 
-
-driver = webdriver.Firefox()
+driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 driver.get("http://proj.eba-n2jnhybi.eu-central-1.elasticbeanstalk.com/view/main.php")
 DBHost = driver.find_element_by_id("param[DbHost]")
 DBHost.clear()
