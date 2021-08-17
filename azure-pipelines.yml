@@ -11,13 +11,13 @@ variables:
   azureSubscription: 'dfed64a3-5003-40a2-ac52-1c46b24f20fb'
 
   # Web app name
-  webAppName: 'fff-projeqtor'
+  webAppName: 'projeqtor'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'fff-projeqtor'
+  environmentName: 'projeqtor'
 
   # Root folder under which your composer.json file is available.
   rootFolder: $(System.DefaultWorkingDirectory)
