@@ -75,3 +75,29 @@ stages:
               azureSubscription: $(azureSubscription)
               appName: $(webAppName)
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+      
+      
+- stage: RunScript
+  displayName: 'run Python script'
+  dependsOn: Deploy
+  condition: succeeded()
+  variables:
+    pythonVersion: '3.8'
+  jobs:
+  - job: BuildJob
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - script: |
+      sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
+      sudo add-apt-repository ppa:mozillateam/firefox-next
+      sudo apt-get update
+      sudo apt-get install firefox xvfb -y
+      sudo Xvfb :10 -ac &
+      sudo export DISPLAY=:10
+      pip install --upgrade pip
+      pip install selenium
+      pip install webdriver_manager
+      python3 python3 conf/projeqtor_post.py
+     workingDirectory: $(rootFolder)
+  
