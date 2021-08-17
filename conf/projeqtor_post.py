@@ -4,7 +4,7 @@ from webdriver_manager.firefox import GeckoDriverManager
 
 
 driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
-driver.get("http://fff-projeqtor.azurewebsites.net")
+driver.get("http://fff-projeqtor.azurewebsites.net/view/main.php")
 DBHost = driver.find_element_by_id("param[DbHost]")
 DBHost.clear()
 DBHost.send_keys("azure-mysql-serv.mysql.database.azure.com")
