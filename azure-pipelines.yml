@@ -94,7 +94,7 @@ stages:
         sudo apt-get update
         sudo apt-get install firefox xvfb -y
         sudo Xvfb :10 -ac &
-        sudo export DISPLAY=:10
+        export DISPLAY=:10
         pip install --upgrade pip
         pip install selenium
         pip install webdriver_manager
