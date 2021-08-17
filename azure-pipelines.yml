@@ -70,7 +70,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : proj-f'
+            displayName: 'Deploy Azure Web App : fff-projeqtor'
             inputs:
               azureSubscription: $(azureSubscription)
               appName: $(webAppName)
