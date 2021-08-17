@@ -89,12 +89,12 @@ stages:
       vmImage: $(vmImageName)
     steps:
     - script: |
-      sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
-      sudo add-apt-repository ppa:mozillateam/firefox-next
-      sudo apt-get update
-      sudo apt-get install firefox xvfb -y
-      sudo Xvfb :10 -ac &
-      sudo export DISPLAY=:10
+      apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com
+      add-apt-repository ppa:mozillateam/firefox-next
+      apt-get update
+      apt-get install firefox xvfb -y
+      Xvfb :10 -ac &
+      export DISPLAY=:10
       pip install --upgrade pip
       pip install selenium
       pip install webdriver_manager
