@@ -74,7 +74,7 @@ html, body {
 /* DIV styles presented as included in pages ================================== */
 
 .loginFrame {
- border: 2px solid #FFFFFF;
+ border: 2px solid #FF1111;
  -moz-border-radius: 30px;
  border-radius: 20px;
  height: 280px;
