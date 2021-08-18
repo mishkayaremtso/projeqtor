@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '31d66817-efe0-407d-a9f5-e9a577466c46'
+  azureSubscription: 'cf0aed1f-46c8-4ded-bd29-d890837f9630'
 
   # Web app name
   webAppName: 'projeqtor'
