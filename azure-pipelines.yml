@@ -8,16 +8,16 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'cf0aed1f-46c8-4ded-bd29-d890837f9630'
+  azureSubscription: 'e606e1ec-02bb-44ab-8c57-bc18be35d6b6'
 
   # Web app name
-  webAppName: 'projeqtor'
+  webAppName: 'kek-appservice'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'projeqtor'
+  environmentName: 'kek-appservice'
 
   # Root folder under which your composer.json file is available.
   rootFolder: $(System.DefaultWorkingDirectory)
