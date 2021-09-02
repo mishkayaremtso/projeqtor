@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'cbc72342-df23-4a5c-9961-f92f686dbc3e'
+  azureSubscription: '31649e63-759e-4190-9b24-e60365a820c1'
 
   # Web app name
   webAppName: 'kek-appservice'
